@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>EMERGENCY</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="style/bootstrap/css/bootstrap-responsive.css" rel="stylesheet">
+	<link rel="stylesheet" href="style/bootstrap/css/bootstrap.min.css">
+	<script src="style/bootstrap/js/bootstrap.min.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.js" type="text/javascript"></script>
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js"></script>	
+	<style type="text/css">
+		body {font-size:14px; letter-spacing:1px; margin:0; padding:0; color:#585656; font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;}
+		.the-table {padding-left: 100px; padding-right: 100px; padding-top: 2px;}
+		@media (min-width: 1200px) { .the-table {padding-left: 50px; padding-right: 50px; padding-top: 5px;;} }
+		@media (max-width: 960px) { body {font-size:14px; }.the-table {padding-left: 25px; padding-right: 25px; padding-top: 10px;} }
+		@media (max-width: 480px) { body {font-size:12px; }.the-table {padding-left: 5px; padding-right: 5px; padding-top: 10px;} }
+		a:link {color: #585656;}
+		a:visited {color: #585656;}
+		a:hover {color: #FF0000; text-decoration: underline;}
+		a:active {color: #585656;}
+		.pagination ul > .active > a, .pagination ul > .active > span {color: #FF0000; cursor: pointer;}
+	</style>
+	<script type="text/javascript">
+		function toggleDiv(divId) {
+		if($("#" + divId).css('display') == 'none'){
+		$("#member1, #member2, #member3, #member4").hide(''); 
+		$("#member1-title, #member2-title, #member3-title, #member4-title").removeClass('active');
+		$("#" + divId).show('');
+		$("#" + divId + "-title").addClass('active');
+		} else { 
+		$("#member1, #member2, #member3, #member4").hide('');
+		$("#" + divId + "-title").removeClass('active');
+		}	
+		}
+	</script>
+	<script type="text/javascript">
+		window.onload = function() {
+		$("#member1-title").addClass('active');
+		};
+	</script>
+</head>
+
+<body>
+	<div id="body" class="" style="margin-top:10px;">
+ 	
+ 	<legend class="lead" style="text-align:center;">EMERGENCY INFORMATION</legend>
+ 	
+	<div id="menu" class="pagination" style="text-align:center; margin-bottom:0px;">
+		<ul>
+		<li id="member1-title"><a href="javascript:toggleDiv('member1');" id="member1-link">JOHN</a></li>
+		<li id="member2-title"><a href="javascript:toggleDiv('member2');" id="member2-link">JANE</a></li>
+		<li id="member3-title"><a href="javascript:toggleDiv('member3');" id="member3-link">BOBBY</a></li>
+		<li id="member4-title"><a href="javascript:toggleDiv('member4');" id="member4-link">SALLY</a></li>
+		</ul>
+	</div>
+     
+	<div id="member1" class="the-table">
+		<table class="table table-bordered table-striped" style="width:100%">
+		<caption></caption>
+		<colgroup>
+		<col span="1" style="width: 20%; text-align:right;">
+		<col span="1">
+		</colgroup>
+		<tbody>
+		<tr>
+		<td style="text-align:right; vertical-align:middle; font-size: 10px;">NAME</td>
+		<td><span style="color:#FF0000;">JOHN DOE SMITH</span><br /><small><a href="tel:+15555551212">+1 555-555-1212</a><br /><a href="mailto:user@domain.com">user@domain.com</a></small></td>
+		</tr>
+		<tr>
+		<td style="text-align:right; vertical-align:middle; font-size: 10px;">EMERGENCY CONTACT</td>
+		<td><span style="color:#FF0000;">JANE SMITH</span> <small>wife</small><br /><small><a href="tel:+15555551212">+1 555-555-1212</a><br /><a href="mailto:user@domain.com">user@domain.com</a></small></td>
+		</tr>
+		<tr>
+		<td style="text-align:right; vertical-align:middle; font-size: 10px;">BIRTHDAY</td>
+		<td><span style="color:#FF0000;">AGE 35</span><br /><small>january 1 1978</small></td>
+		</tr>
+		<tr>
+		<td style="text-align:right; vertical-align:middle; font-size: 10px;">RESIDENCE</td>
+		<td><span class="" style="color:#FF0000;">DENVER COLORADO U.S.A.</span><br /><small><a href="http://goo.gl/maps/csjbg" target="_new">1212 university drive<BR />denver, co 80226</a></small></td>
+		</tr>
+		<tr>
+		<td style="text-align:right; vertical-align:middle; font-size: 10px;">PRIMARY CARE</td>
+		<td><span style="color:#FF0000;">SMITH FAMILY MEDICINE</span><br /><small>richard smith, MD<br /><a href="http://goo.gl/maps/csjbg" target="_new">1212 main street<br />denver, co 80206</a><br /><a href="tel:+15555551212">+1 555-555-1212</a></small></td>
+		</tr>
+		<tr>
+		<td style="text-align:right; vertical-align:middle; font-size: 10px;">MEDICAL HISTORY</td>
+		<td><span style="color:#FF0000;">NO KNOWN MEDICAL HISTORY</span></td>
+		</tr>
+		<tr>
+		<td style="text-align:right; vertical-align:middle; font-size: 10px;">ALLERGIES</td>
+		<td><span style="color:#FF0000;">NO KNOWN DRUG ALLERGIES</span><BR /><small>miled allergies to grass &amp; hay</small></td>
+		</tr>
+		<tr>
+		<td style="text-align:right; vertical-align:middle; font-size: 10px;">INSURANCE</td>
+		<td>BLUE CROSS <span style="color:#FF0000;">123456789</span></td>
+		</tr>
+		<tr>
+		<td style="text-align:right; vertical-align:middle; font-size: 10px;">BLOOD TYPE</td>
+		<td><span style="color:#FF0000;">B+</span></td>
+		</tr>
+		<tr>
+		<td style="text-align:right; vertical-align:middle; font-size: 10px;">DONOR STATUS</td>
+		<td><span style="color:#FF0000;">YES</span><br /><small>john smith is a registered organ donor</small></td>
+		</tr>
+		<tr>
+		<td style="text-align:right; vertical-align:middle; font-size: 10px;">MEDICATIONS</td>
+		<td><span style="color:#FF0000;">NO CURRENT PRESCRIPTION MEDICATION</span><br /><small>2 aspirin up to once daily</small></td>
+		</tr>
+		<tr>
+		<td style="text-align:right; vertical-align:middle; font-size: 10px;">WORK INFORMATION</td>
+		<td><span style="color:#FF0000;">JOB TITLE</span><small> @ <a href="http://www.mycompany.com" target="_new">mycompany.com</a></small><br /><small><a href="http://goo.gl/maps/csjbg" target="_new">1212 office plaza (suite 400)<br />denver, co 80206</a><br /><a href="tel:+15555551212">+1 555-555-1212</a></small></td>
+		</tr>
+		</tbody>
+		</table>
+	</div>
+
+	<div id="member2" class="the-table" style="display: none;">
+		<table class="table table-bordered table-striped" style="width:100%">
+		<caption></caption>
+		<colgroup>
+		<col span="1" style="width: 20%; text-align:right;">
+		<col span="1">
+		</colgroup>
+		<tbody>
+		<tr>
+		<td style="text-align:right; vertical-align:middle; font-size: 10px;">NAME</td>
+		<td><span style="color:#FF0000;">JANE DOE SMITH</span><br /><small><a href="tel:+15555551212">+1 555-555-1212</a><br /><a href="mailto:user@domain.com">user@domain.com</a></small></td>
+		</tr>
+		<tr>
+		<td style="text-align:right; vertical-align:middle; font-size: 10px;">EMERGENCY CONTACT</td>
+		<td><span style="color:#FF0000;">JOHN SMITH</span> <small>husband</small><br /><small><a href="tel:+15555551212">+1 555-555-1212</a><br /><a href="mailto:user@domain.com">user@domain.com</a></small></td>
+		</tr>
+		<tr>
+		<td style="text-align:right; vertical-align:middle; font-size: 10px;">BIRTHDAY</td>
+		<td><span style="color:#FF0000;">AGE 35</span><br /><small>january 1 1978</small></td>
+		</tr>
+		<tr>
+		<td style="text-align:right; vertical-align:middle; font-size: 10px;">RESIDENCE</td>
+		<td><span class="" style="color:#FF0000;">DENVER COLORADO U.S.A.</span><br /><small><a href="http://goo.gl/maps/csjbg" target="_new">1212 university drive<BR />denver, co 80226</a></small></td>
+		</tr>
+		<tr>
+		<td style="text-align:right; vertical-align:middle; font-size: 10px;">PRIMARY CARE</td>
+		<td><span style="color:#FF0000;">SMITH FAMILY MEDICINE</span><br /><small>richard smith, MD<br /><a href="http://goo.gl/maps/csjbg" target="_new">1212 main street<br />denver, co 80206</a><br /><a href="tel:+15555551212">+1 555-555-1212</a></small></td>
+		</tr>
+		<tr>
+		<td style="text-align:right; vertical-align:middle; font-size: 10px;">MEDICAL HISTORY</td>
+		<td><span style="color:#FF0000;">NO KNOWN MEDICAL HISTORY</span></td>
+		</tr>
+		<tr>
+		<td style="text-align:right; vertical-align:middle; font-size: 10px;">ALLERGIES</td>
+		<td><span style="color:#FF0000;">NO KNOWN DRUG ALLERGIES</span><BR /><small>miled allergies to grass &amp; hay</small></td>
+		</tr>
+		<tr>
+		<td style="text-align:right; vertical-align:middle; font-size: 10px;">INSURANCE</td>
+		<td>BLUE CROSS <span style="color:#FF0000;">123456789</span></td>
+		</tr>
+		<tr>
+		<td style="text-align:right; vertical-align:middle; font-size: 10px;">BLOOD TYPE</td>
+		<td><span style="color:#FF0000;">B+</span></td>
+		</tr>
+		<tr>
+		<td style="text-align:right; vertical-align:middle; font-size: 10px;">DONOR STATUS</td>
+		<td><span style="color:#FF0000;">YES</span><br /><small>jane smith is a registered organ donor</small></td>
+		</tr>
+		<tr>
+		<td style="text-align:right; vertical-align:middle; font-size: 10px;">MEDICATIONS</td>
+		<td><span style="color:#FF0000;">NO CURRENT PRESCRIPTION MEDICATION</span><br /><small>2 aspirin up to once daily</small></td>
+		</tr>
+		<tr>
+		<td style="text-align:right; vertical-align:middle; font-size: 10px;">WORK INFORMATION</td>
+		<td><span style="color:#FF0000;">JOB TITLE</span><small> @ <a href="http://www.mycompany.com" target="_new">mycompany.com</a></small><br /><small><a href="http://goo.gl/maps/csjbg" target="_new">1212 office plaza (suite 400)<br />denver, co 80206</a><br /><a href="tel:+15555551212">+1 555-555-1212</a></small></td>
+		</tr>
+		</tbody>
+		</table>
+	</div>
+
+	<div id="member3" class="the-table" style="display: none;">
+		<table class="table table-bordered table-striped" style="width:100%">
+		<caption></caption>
+		<colgroup>
+		<col span="1" style="width: 20%; text-align:right;">
+		<col span="1">
+		</colgroup>
+		<tbody>
+		<tr>
+		<td style="text-align:right; vertical-align:middle; font-size: 10px;">NAME</td>
+		<td><span style="color:#FF0000;">BOBBY JOE SMITH</span></td>
+		</tr>
+		<tr>
+		<td style="text-align:right; vertical-align:middle; font-size: 10px;">EMERGENCY CONTACT 1</td>
+		<td><span style="color:#FF0000;">JANE SMITH</span> <small>mom</small><br /><small><a href="tel:+15555551212">+1 555-555-1212</a><br /><a href="mailto:user@domain.com">user@domain.com</a></small></td>
+		</tr>
+		<tr>
+		<td style="text-align:right; vertical-align:middle; font-size: 10px;">EMERGENCY CONTACT 2</td>
+		<td><span style="color:#FF0000;">JOHN SMITH</span> <small>dad</small><br /><small><a href="tel:+15555551212">+1 555-555-1212</a><br /><a href="mailto:user@domain.com">user@domain.com</a></small></td>
+		</tr>
+		<tr>
+		<td style="text-align:right; vertical-align:middle; font-size: 10px;">BIRTHDAY</td>
+		<td><span style="color:#FF0000;">AGE 10</span><br /><small>january 1 2003</small></td>
+		</tr>
+		<tr>
+		<td style="text-align:right; vertical-align:middle; font-size: 10px;">RESIDENCE</td>
+		<td><span class="" style="color:#FF0000;">DENVER COLORADO U.S.A.</span><br /><small><a href="http://goo.gl/maps/csjbg" target="_new">1212 university drive<BR />denver, co 80226</a></small></td>
+		</tr>
+		<tr>
+		<td style="text-align:right; vertical-align:middle; font-size: 10px;">PRIMARY CARE</td>
+		<td><span style="color:#FF0000;">SMITH FAMILY MEDICINE</span><br /><small>richard smith, MD<br /><a href="http://goo.gl/maps/csjbg" target="_new">1212 main street<br />denver, co 80206</a><br /><a href="tel:+15555551212">+1 555-555-1212</a></small></td>
+		</tr>
+		<tr>
+		<td style="text-align:right; vertical-align:middle; font-size: 10px;">MEDICAL HISTORY</td>
+		<td><span style="color:#FF0000;">NO KNOWN MEDICAL HISTORY</span></td>
+		</tr>
+		<tr>
+		<td style="text-align:right; vertical-align:middle; font-size: 10px;">ALLERGIES</td>
+		<td><span style="color:#FF0000;">NO KNOWN DRUG ALLERGIES</span><BR /><small>miled allergies to grass &amp; hay</small></td>
+		</tr>
+		<tr>
+		<td style="text-align:right; vertical-align:middle; font-size: 10px;">INSURANCE</td>
+		<td>BLUE CROSS <span style="color:#FF0000;">123456789</span></td>
+		</tr>
+		<tr>
+		<td style="text-align:right; vertical-align:middle; font-size: 10px;">BLOOD TYPE</td>
+		<td><span style="color:#FF0000;">B+</span></td>
+		</tr>
+		<tr>
+		<td style="text-align:right; vertical-align:middle; font-size: 10px;">MEDICATIONS</td>
+		<td><span style="color:#FF0000;">NO CURRENT PRESCRIPTION MEDICATION</span></td>
+		</tr>
+		<tr>
+		<td style="text-align:right; vertical-align:middle; font-size: 10px;">SCHOOL</td>
+		<td><span style="color:#FF0000;">NAME OF SCHOOL</span><br /><small><a href="http://goo.gl/maps/csjbg" target="_new">1212 school street<br />denver, co 80206‎</a><br /><a href="tel:+15555551212">+1 555-555-1212</a></small></td>
+		</tr>
+		</tbody>
+		</table>
+	</div>
+	
+	<div id="member4" class="the-table" style="display: none;">
+		<table class="table table-bordered table-striped" style="width:100%">
+		<caption></caption>
+		<colgroup>
+		<col span="1" style="width: 20%; text-align:right;">
+		<col span="1">
+		</colgroup>
+		<tbody>
+		<tr>
+		<td style="text-align:right; vertical-align:middle; font-size: 10px;">NAME</td>
+		<td><span style="color:#FF0000;">SALLY ANN SMITH</span></td>
+		</tr>
+		<tr>
+		<td style="text-align:right; vertical-align:middle; font-size: 10px;">EMERGENCY CONTACT 1</td>
+		<td><span style="color:#FF0000;">JANE SMITH</span> <small>mom</small><br /><small><a href="tel:+15555551212">+1 555-555-1212</a><br /><a href="mailto:user@domain.com">user@domain.com</a></small></td>
+		</tr>
+		<tr>
+		<td style="text-align:right; vertical-align:middle; font-size: 10px;">EMERGENCY CONTACT 2</td>
+		<td><span style="color:#FF0000;">JOHN SMITH</span> <small>dad</small><br /><small><a href="tel:+15555551212">+1 555-555-1212</a><br /><a href="mailto:user@domain.com">user@domain.com</a></small></td>
+		</tr>
+		<tr>
+		<td style="text-align:right; vertical-align:middle; font-size: 10px;">BIRTHDAY</td>
+		<td><span style="color:#FF0000;">AGE 5</span><br /><small>january 1 2008</small></td>
+		</tr>
+		<tr>
+		<td style="text-align:right; vertical-align:middle; font-size: 10px;">RESIDENCE</td>
+		<td><span class="" style="color:#FF0000;">DENVER COLORADO U.S.A.</span><br /><small><a href="http://goo.gl/maps/csjbg" target="_new">1212 university drive<BR />denver, co 80226</a></small></td>
+		</tr>
+		<tr>
+		<td style="text-align:right; vertical-align:middle; font-size: 10px;">PRIMARY CARE</td>
+		<td><span style="color:#FF0000;">SMITH FAMILY MEDICINE</span><br /><small>richard smith, MD<br /><a href="http://goo.gl/maps/csjbg" target="_new">1212 main street<br />denver, co 80206</a><br /><a href="tel:+15555551212">+1 555-555-1212</a></small></td>
+		</tr>
+		<tr>
+		<td style="text-align:right; vertical-align:middle; font-size: 10px;">MEDICAL HISTORY</td>
+		<td><span style="color:#FF0000;">NO KNOWN MEDICAL HISTORY</span></td>
+		</tr>
+		<tr>
+		<td style="text-align:right; vertical-align:middle; font-size: 10px;">ALLERGIES</td>
+		<td><span style="color:#FF0000;">NO KNOWN DRUG ALLERGIES</span><BR /><small>miled allergies to grass &amp; hay</small></td>
+		</tr>
+		<tr>
+		<td style="text-align:right; vertical-align:middle; font-size: 10px;">INSURANCE</td>
+		<td>BLUE CROSS <span style="color:#FF0000;">123456789</span></td>
+		</tr>
+		<tr>
+		<td style="text-align:right; vertical-align:middle; font-size: 10px;">BLOOD TYPE</td>
+		<td><span style="color:#FF0000;">B+</span></td>
+		</tr>
+		<td style="text-align:right; vertical-align:middle; font-size: 10px;">MEDICATIONS</td>
+		<td><span style="color:#FF0000;">NO CURRENT PRESCRIPTION MEDICATION</span></td>
+		</tr>
+		<tr>
+		<td style="text-align:right; vertical-align:middle; font-size: 10px;">SCHOOL</td>
+		<td><span style="color:#FF0000;">NAME OF SCHOOL</span><br /><small><a href="http://goo.gl/maps/csjbg" target="_new">1212 school street<br />denver, co 80206‎</a><br /><a href="tel:+15555551212">+1 555-555-1212</a></small></td>
+		</tr>
+		</tbody>
+		</table>
+	</div>
+
+	</div>
+	
+	</body>
+</html>
